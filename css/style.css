@@ -250,6 +250,19 @@ h3.menu-item-title {
   .container .jumbotron {
     background: url("../images/jumbotron_1200.jpg") no-repeat;
     height: 800px;
+    animation-name: pixchange;
+    animation-duration: 30s;
+    animation-delay: 2s;
+    animation-fill-mode: ;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+  }
+  @keyframes pixchange {
+    0% {background: url("../images/jumbotron_1200.jpg");}
+    25% {background: url("../images/menu-tile.jpg");}
+    50% {background: url("../images/specials-tile.jpg");}
+    75% {background: url("../images/jumbotron_1200.jpg");}
+    100% {background: url("../images/menu-tile.jpg");}
   }
 }
 
@@ -322,6 +335,10 @@ h3.menu-item-title {
     border: 2px solid #fff;
     background-color: #abdef8;
     color: #3182aa;
+  }
+  #call-btn a:hover {
+    background-color: #189e3e;
+    color: #fff;
   }
   #xs-deliver {
     margin-top: 5px;
